@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>swasabharath</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="ContactUs.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body style="background-color:#faceaf;">
+    <header>
+        <a class="logo"><h1>Swasabharath</h1></a>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="MainFile.html">Home</a></li>
+                <li><a href="AboutUsPage.html">About Us</a></li>
+                <li><a href="gallery_page.html">Gallery</a></li>
+                <li><a href="documentPage.html">Documents</a></li>
+                <li><a href="contactUs.html">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script type="text/javascript" src="navbar.js"></script>
+    <form id="usrform" name="contact" method="POST" data-netlify="true">
+        <div class="bg-form">
+            <img src="cont.png" style="height:200px" />
+            <p class="contact-head">
+                <span>Feel free to drop us a line below!</span>
+            </p>
+            <hr />
+            <div>
+                <div class="row">
+                    <div class="column1">
+                        <span class="name">Full Name:</span>
+                        <div class="other-info">
+                            <span class="name">Email:</span>
+                        </div>
+                        <div class="other-info">
+                            <span class="name">Phone:</span>
+                        </div>
+                        <div class="other-info">
+                            <span class="name">Message:</span>
+                        </div>
+                    </div>
+                    <div class="column2">
+                        <div class="box" style="width:100%">
+                            <input type="text" class="input" name="text1" placeholder="Enter full name" style="width:100%; font-family: 'Poppins', sans-serif;font-weight:100" />
+                            <input type="text" class="input" name="text2" placeholder="Enter Email address" style="width:100%; font-family: 'Poppins', sans-serif;font-weight:100;margin-top:30px" />
+                            <input type="text" class="input" name="text3" placeholder="Enter Phone number" style="width:100%; font-family: 'Poppins', sans-serif;font-weight:100;margin-top:30px" />
+                            <textarea rows="3" class="input" cols="50" name="comment" form="usrform" placeholder="Your Comment" style="width:100%; font-family: 'Poppins', sans-serif;font-weight:100;margin-top:30px"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="submit-button">
+                <button class="button submit" onclick="submitFunction()" style="font-family: 'Poppins', sans-serif;font-weight:100;margin-top:30px;">Submit</button>
+            </div>
+        </div>
+    </form>
+    <script>
+        function submitFunction() {
+            var txt1 = document.forms["contact"]["text1"].value;
+            var txt1 = document.forms["contact"]["text2"].value;
+            var txt1 = document.forms["contact"]["text3"].value;
+            var txt1 = document.forms["contact"]["comment"].value;
+            if (txt1 == "") {
+                alert("Please fill all the details");
+                return False;
+            }
+            else {
+                alert('Successfully sumitted');
+                return true;
+            }
+        }
+    </script>
+    <div class="footer-content">
+        <div class="footer-row">
+            <div class="footer-column" style=" background-color: #e67300;">
+                <div class="contact-number">
+                    <h2 style="padding-left: 50px; padding-top: 12px; font-family: 'geomanist-book'; font-size: 1.50em; color: rgba(255,255,255,1); font-weight: 500; margin-bottom: 0.2em; ">Contact Us</h2>
+                    <i class="fa fa-mobile-phone" style="padding-left: 30px;font-size:36px; position: relative; color: white; float: left;padding-right:10px"></i>
+                    <p style="position:relative;color:white;">
+                        <span style="font-family:'geomanist-book'; font-size:1.00em; color: rgba(255,255,255,1); line-height: 1.8">+91 866 045 2853</span><br />
+                        <span style="font-family: 'geomanist-book'; font-size: 1.00em; color: rgba(255,255,255,1); line-height: 1.8">+91 990 145 4200</span><br />
+                        <span style="padding-left:55px;font-family:'geomanist-book'; font-size: 1.00em; color: rgba(255,255,255,1);line-height:1.8">+91 782 982 9071</span><br />
+                        <span style="padding-left: 55px;font-family:'geomanist-book'; font-size: 1.00em; color: rgba(255,255,255,1); line-height: 1.8">+91 944 936 3209</span><br />
+                    </p>
+                </div>
+                <div class="mail-details" style="margin-top:5%">
+                    <i class="fa fa-envelope" style="padding-left: 25px; font-size: 1.70em; position: relative; color: white; float: left; padding-right: 10px"></i>
+                    <p style="position: relative; color: white;">
+                        <span style="font-family:'geomanist-book'; font-size: 1.00em; color: rgba(255,255,255,1); line-height: 1.8"> swasabharath47@gmail.com</span><br />
+                    </p>
+                </div>
+                <div class="whatsapp-num" style="margin-top:40px">
+                    <i class="fa fa-whatsapp" style="padding-left: 25px ;font-size:2.0em; position: relative; color: white; float: left; padding-right: 10px"></i>
+                    <p style="position: relative; color: white;">
+                        <span style="font-family:'geomanist-book'; font-size: 1.00em; color: rgba(255,255,255,1); line-height: 1.8">+91 866 045 2853</span><br />
+                    </p>
+                </div>
+            </div>
+            <div class="footer-column" style="background-color: #cc6600;display:flex">
+                <div class="link-subcolumn">
+                    <h2 style="padding-left: 50px; padding-top: 12px; font-family: 'geomanist-book'; font-size: 1.50em; color: rgba(255,255,255,1); font-weight: 500; margin-bottom: 0.2em; ">Links</h2>
+                    <ul style="padding-left: 50px;font-family:'geomanist-book'; font-size: 1.00em; color: rgba(255,255,255,1);line-height:1.8"><a href="MainFile.html" style="color:white;text-decoration: none">Home</a></ul>
+                    <ul style="padding-left: 50px;font-family: 'geomanist-book'; font-size: 1.00em; color: rgba(255,255,255,1);line-height:1.8"><a href="gallery_page.html" style="color:white;text-decoration: none">Gallery</a></ul>
+                    <ul style="padding-left: 50px;font-family: 'geomanist-book'; font-size: 1.00em; color: rgba(255,255,255,1);line-height:1.8"><a href="AboutUsPage.html" style="color:white;text-decoration: none"> About Us</a></ul>
+                    <ul style="padding-left: 50px;font-family: 'geomanist-book'; font-size: 1.00em; color: rgba(255,255,255,1);line-height:1.8"><a href="contactUS.html" style="color:white;text-decoration: none"> Contact us</a></ul>
+                    <ul style="padding-left: 50px;font-family: 'geomanist-book'; font-size: 1.00em; color: rgba(255,255,255,1);line-height:1.8"><a href="documentPage.html" style="color:white;text-decoration: none">Documents</a></ul>
+                    <ul style="padding-left: 50px;font-family: 'geomanist-book'; font-size: 1.00em; color: rgba(255,255,255,1);line-height:1.8"><a href="contactUS.html" style="color:white;text-decoration: none"> Write us</a></ul>
+                    <ul style="padding-left: 50px;font-family: 'geomanist-book'; font-size: 1.00em; color: rgba(255,255,255,1);line-height:1.8"><a href="termsandconditions.html" style="color:white;text-decoration: none"> Terms & Conditions</a></ul>
+                    <ul style="padding-left: 50px;font-family: 'geomanist-book'; font-size: 1.00em; color: rgba(255,255,255,1);line-height:1.8"><a href="PrivacyPolicy.html" style="color:white;text-decoration: none">Privacy</a></ul>
+                </div>
+            </div>
+            <div class="footer-column" style="background-color:#b35a00;">
+                <h2 style="padding-left: 50px; padding-top: 12px; font-family: 'geomanist-book'; font-size: 1.30em; color: rgba(255,255,255,1); font-weight: 500; margin-bottom: 0.2em;margin-top: 20%;padding-left: 25%;">Keep In Touch With Us</h2>
+                <div class="media-bar" style="margin-left: 12%;">
+                    <a href="#" class="fa fa-facebook" style="text-align: center; background: #3B5998; font-size: 30px; width: 60px; color: white;height: 45px;text-decoration: none;margin: 5px 2px;padding: 8px;"></a>
+                    <a href="#" class="fa fa-twitter" style="text-align:center;background: #55ACEE; font-size: 30px; width: 60px; color: white;height: 45px;text-decoration: none;margin: 5px 2px;padding: 8px"></a>
+                    <a href="#" class="fa fa-google" style=" text-align:center;background: #dd4b39; font-size: 30px; width: 60px; color: white;height: 45px;text-decoration: none;margin: 5px 2px;padding: 8px"></a>
+                    <a href="#" class="fa fa-youtube" style="text-align: center; background: #bb0000; font-size: 30px; width: 60px; color: white;height: 45px;text-decoration: none;margin: 5px 2px;padding: 8px"></a>
+                    <a href="#" class="fa fa-instagram" style="text-align: center; background: #d92e62; font-size: 30px; width: 60px; color: white;height: 45px;text-decoration: none;margin: 5px 2px;padding: 8px "></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyrights" style="background-color: #b35a00">
+            <hr style="width:100%;color:#db8426">
+            <p style="padding-left: 50px; font-family: 'geomanist-book'; font-size: 1.00em; color: rgba(255,255,255,1);padding-top: 12px;padding-bottom: 12px;">
+                © All rights reserved. Swasabharath Organization.
+                <span style="padding-left: 750px;color:#00093e"> Web Design by | Shreyas S K</span>
+            </p>
+        </div>
+
+    </div>
+</body>
+</html>
